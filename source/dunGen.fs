@@ -300,7 +300,7 @@ let view (model: ViewModel) dispatch =
       R.div [] [
         R.text [] [
           match model.messages |> List.filter (fun (x,y,msg) -> (x,y) = model.currentPosition) with
-          | [] -> "Nothing interesting here"
+          | [] -> ""
           | msgs -> String.Join("; also ", msgs |> List.map(fun(_,_,msg) -> msg))
           |> R.str
           ]
