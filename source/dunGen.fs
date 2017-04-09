@@ -281,6 +281,7 @@ let view (model: ViewModel) dispatch =
 
   R.div [ClassName "shell"] [
     R.div [] [
+      R.h1 [] [R.str "BadarniMaze"]
       R.div [] [
         R.h2 [] [R.str "Use the arrow keys to move around the dungeon until you find the blue X. The faster you find it, the more points you get."]
         ]
